@@ -1,0 +1,22 @@
+python3 -m venv .venv
+source .venv/bin/activate
+
+pip install ffmpeg-python
+pip install torch torchvision torchaudio
+pip install git+https://github.com/openai/whisper.git
+pip install transformers
+pip install moviepy
+
+python main.py
+
+pip install google-genai
+pip install -U agno lancedb tantivy inquirer
+pip install sqlalchemy
+pip install huggingface-hub -> for hosted models, so not needed as we are running models locally
+pip install pandas
+pip install sentence-transformers -> for models running locally
+pip install ddgs
+
+export GOOGLE_API_KEY=
+
+python agent.py
